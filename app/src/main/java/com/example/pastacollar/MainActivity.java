@@ -3,6 +3,7 @@ package com.example.pastacollar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity
 {
@@ -11,5 +12,7 @@ public class MainActivity extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        TextView mainTextView = (TextView)findViewById(R.id.mainTextView);
     }
 }
