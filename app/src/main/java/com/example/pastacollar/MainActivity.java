@@ -36,5 +36,14 @@ public class MainActivity extends AppCompatActivity
                 Integer.valueOf(
                     new SimpleDateFormat("dd", Locale.getDefault()).format(date)
                 );
+
+        int momAgeAfterBirthday = year - 1966;
+
+        if(month == 5 && day == 30)
+            mainTextView.setText("Bonne fête maman !!!");
+        else if(month == 10 && day == 21)
+            mainTextView.setText("Joyeux " + momAgeAfterBirthday + " ans maman !!!");
+        else if(month == 12 && day == 31)
+            mainTextView.setText("Bonne année maman !!!");
     }
 }
