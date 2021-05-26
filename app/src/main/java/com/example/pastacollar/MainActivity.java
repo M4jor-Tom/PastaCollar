@@ -42,7 +42,16 @@ public class MainActivity extends AppCompatActivity
             mainTextView.setText("Bonne fête maman !!!");
         else if(month == 10 && day == 21)
             mainTextView.setText("Joyeux " + momAgeAfterBirthday + " ans maman !!!");
-        else if(month == 12 && day == 31)
-            mainTextView.setText("Bonne année maman !!!");
+        else if(month == 12)
+        {
+            if(day == 25)
+                mainTextView.setText("Joyeux noël maman !!!");
+            else if(day == 31)
+                mainTextView.setText("Bonne année maman !!!");
+            else if(day > 25 && day < 31)
+                mainTextView.setText("Bon bout d'an maman !!!");
+        }
+        else if(month == 1 && day == 1)
+            mainTextView.setText("Bon réveillon maman !!!");
     }
 }
