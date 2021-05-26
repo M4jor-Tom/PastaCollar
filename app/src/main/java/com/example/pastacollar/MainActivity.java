@@ -18,7 +18,6 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
 
         TextView mainTextView = (TextView)findViewById(R.id.mainTextView);
-        mainTextView.setText("Ah... Rien aujourd'hui...");
 
         Date date = new Date();
 
